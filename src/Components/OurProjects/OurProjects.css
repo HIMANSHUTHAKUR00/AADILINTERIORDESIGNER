@@ -1,0 +1,72 @@
+.our-projects{
+    padding: 3vh 0;
+    overflow-x: hidden;
+}
+.our-projects-container{
+    width: 60%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: clamp(2rem, 3vw, 10rem);
+}
+.our-projects-content{
+  width: 40%;
+
+}
+.our-projects-content h1{
+    font-size: clamp(2.5rem, 4vw, 10rem);
+    font-weight: 500;
+    margin-bottom: 2vh;
+}
+.our-projects-content > p{
+    font-size: clamp(1.3rem, 1.5vw, 10rem);
+    margin-bottom: 9vh;
+}
+.our-projects-cta{
+    display: flex;
+    background: #E5F063;
+    gap: clamp(0.5rem, 1vw, 1rem);
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+    cursor: pointer;
+    padding: 1rem 1rem;
+}
+.our-projects-cta p{
+    font-size: clamp(1rem, 1.5vw, 10rem);
+    text-transform: uppercase;
+}
+.our-projects-img{
+    width: 50%;
+    height: 90%;
+    position: relative;
+    overflow: hidden;
+
+}
+.overlay-2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 900px) {
+    .our-projects-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .our-projects-content{
+        width: 90%;
+    }
+    .our-projects-img{
+        width: 80%;
+        height: 50%;
+        overflow-x: hidden;
+    }
+}
